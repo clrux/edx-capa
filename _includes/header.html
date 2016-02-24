@@ -5,7 +5,20 @@
     </header>
 
     <nav class="navigation" aria-label="Main">
-        <ul class="list-inline">
-            <li class="item"><a href="{{ site.baseUrl }}/problems/checkboxes.html">Checkboxes</a></li>
-        </ul>
+        <div class="problem-types" role="group" aria-label="Problem types">
+            <ul class="list-inline">
+                <li class="item"><a href="{{ site.baseUrl }}/problems/checkboxes/checkboxes.html" {% if page.title == "Checkboxes" %} class="is-active" {% endif %}>Checkbox</a></li>
+                <li class="item"><a href="{{ site.baseUrl }}/problems/multiplechoice/multiplechoice.html" {% if page.title == "MultipleChoice" %} class="is-active" {% endif %}>Multiple choice</a></li>
+                <li class="item"><a href="{{ site.baseUrl }}/problems/dropdowns/dropdowns.html" {% if page.title == "DropDowns" %} class="is-active" {% endif %}>Dropdown</a></li>
+                <li class="item"><a href="{{ site.baseUrl }}/problems/dragdrops/dragdrops.html" {% if page.title == "DragDrops" %} class="is-active" {% endif %}>Drag and drop</a></li>
+                <li class="item"><a href="{{ site.baseUrl }}/problems/textinputs/textinputs.html" {% if page.title == "TextInput" %} class="is-active" {% endif %}>Text input</a></li>
+                <li class="item"><a href="{{ site.baseUrl }}/problems/numericalinputs/numericalinputs.html" {% if page.title == "NumericalInput" %} class="is-active" {% endif %}>Numerical input</a></li>
+            </ul>
+        </div>
+        <div class="view-types" role="group" aria-label="View types">
+            <ul class="list-inline">
+                <li class="item"><a href="multiple.html">Multiple problems</a></li>
+                <li class="item"><a href="single.html">Single problem</a></li>
+            </ul>
+        </div>
     </nav>

@@ -8843,10 +8843,36 @@ a:hover, a:focus {
 
 .header,
 .navigation {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 3px solid #cdd7db;
+  margin: 1rem 0;
   font-weight: 700;
+}
+
+.header .item a,
+.navigation .item a {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.header .item a.is-active,
+.navigation .item a.is-active {
+  background: #fcfcfc;
+}
+
+.header .problem-types,
+.navigation .problem-types {
+  position: relative;
+  z-index: 10;
+  border-top: 3px solid #cdd7db;
+}
+
+.header .view-types,
+.navigation .view-types {
+  position: relative;
+  z-index: 1;
+  top: -1px;
+  border-top: 1px dotted #cdd7db;
+  border-bottom: 3px solid #cdd7db;
+  background: #fcfcfc;
 }
 
 .tabs {

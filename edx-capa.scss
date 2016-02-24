@@ -14,10 +14,35 @@ a {
 
 .header,
 .navigation {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid palette(grayscale-cool, light);
+    margin: 1rem 0;
     font-weight: font-weight(bold);
+
+    .item {
+
+        a {
+            display: inline-block;
+            padding: 1rem;
+
+            &.is-active {
+                background: palette(grayscale, white);
+            }
+        }
+    }
+
+    .problem-types {
+        position: relative;
+        z-index: z-index(mid-front);
+        border-top: 3px solid palette(grayscale-cool, light);
+    }
+
+    .view-types {
+        position: relative;
+        z-index: z-index(base);
+        top: -1px;
+        border-top: 1px dotted palette(grayscale-cool, light);
+        border-bottom: 3px solid palette(grayscale-cool, light);
+        background: palette(grayscale, white);
+    }
 }
 
 .tabs {
