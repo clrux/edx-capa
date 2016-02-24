@@ -25,6 +25,7 @@ a {
 
             &.is-active {
                 background: palette(grayscale, white);
+                color: palette(secondary, base);
             }
         }
     }
@@ -69,6 +70,7 @@ a {
             border-right: 3px solid palette(grayscale-cool, light);
             border-bottom: 0;
             background: palette(grayscale, white);
+            color: palette(secondary, base);
         }
     }
 }
@@ -92,4 +94,16 @@ a {
 .footer {
     margin-top: 1rem;
     padding-top: 1rem;
+}
+
+
+// -------------
+// Problems
+// -------------
+.problem {
+    margin-bottom: 2rem;
+
+    .response-status {
+        margin-bottom: 1rem;
+    }
 }

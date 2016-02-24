@@ -8856,6 +8856,7 @@ a:hover, a:focus {
 .header .item a.is-active,
 .navigation .item a.is-active {
   background: #fcfcfc;
+  color: #cb598d;
 }
 
 .header .problem-types,
@@ -8900,6 +8901,7 @@ a:hover, a:focus {
   border-right: 3px solid #cdd7db;
   border-bottom: 0;
   background: #fcfcfc;
+  color: #cb598d;
 }
 
 .tab-panels {
@@ -8921,4 +8923,12 @@ a:hover, a:focus {
 .footer {
   margin-top: 1rem;
   padding-top: 1rem;
+}
+
+.problem {
+  margin-bottom: 2rem;
+}
+
+.problem .response-status {
+  margin-bottom: 1rem;
 }

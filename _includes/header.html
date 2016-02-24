@@ -17,8 +17,8 @@
         </div>
         <div class="view-types" role="group" aria-label="View types">
             <ul class="list-inline">
-                <li class="item"><a href="multiple.html">Multiple problems</a></li>
-                <li class="item"><a href="single.html">Single problem</a></li>
+                <li class="item"><a href="multiple.html" {% if page.subtitle == "Multiple" %} class="is-active" {% endif %}>Multiple problems</a></li>
+                <li class="item"><a href="single.html" {% if page.subtitle == "Single" %} class="is-active" {% endif %}>Single problem</a></li>
             </ul>
         </div>
     </nav>
