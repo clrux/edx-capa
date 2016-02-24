@@ -1,6 +1,7 @@
 ---
 layout: problems
 title: Checkboxes
+subtitle: Single
 ---
 {% include head.html %}
 {% include header.html %}
@@ -31,7 +32,7 @@ title: Checkboxes
                                 <p class="response-description copy" id="p0-r0-d1">When you add the component, be sure to select <strong>Settings</strong> to specify a <strong>Display Name</strong> and other values that apply.</p>
                                 <p class="response-description copy" id="p0-r0-d2">You can use the following example problem as a model.</p>
                                 <form class="form" id="p0-r0-form">
-                                    <fieldset class="fieldset form-group" id="p0-r0-f0" aria-describedby="p0-r0-d4">
+                                    <fieldset class="fieldset field-group" id="p0-r0-f0" aria-describedby="p0-r0-d4">
                                         <legend class="response-fieldset-legend field-group-hd" id="p0-r0-f0-legend">The following languages are in the Indo-European family:</legend>
                                         <div class="field" aria-live="polite" aria-atomic="true">
                                             <label class="response-label field-label label-inline" id="p0-r0-f0-q0">
@@ -85,11 +86,11 @@ title: Checkboxes
 
                         <div class="problem-actions form-actions">
                             <input type="hidden" name="problem_id" value="Checkboxes">
-                            <button class="btn-default btn-base" data-checking="Checking..." data-value="Check">
+                            <button class="btn-brand" data-checking="Checking..." data-value="Check">
                                 <span class="check-label">Check</span>
                                 <span class="sr"> your answer</span>
                             </button>
-                            <button class="btn-default btn-base show">
+                            <button class="btn-neutral show">
                                 <span class="sr">Toggle answer visibility</span>
                                 <span class="show-label">Show Answer</span>
                             </button>
@@ -113,7 +114,7 @@ title: Checkboxes
             &lt;p class=&quot;response-description copy&quot; id=&quot;p0-r0-d1&quot;&gt;When you add the component, be sure to select &lt;strong&gt;Settings&lt;/strong&gt; to specify a &lt;strong&gt;Display Name&lt;/strong&gt; and other values that apply.&lt;/p&gt;
             &lt;p class=&quot;response-description copy&quot; id=&quot;p0-r0-d2&quot;&gt;You can use the following example problem as a model.&lt;/p&gt;
             &lt;form class=&quot;form&quot; id=&quot;p0-r0-form&quot;&gt;
-                &lt;fieldset class=&quot;fieldset form-group&quot; id=&quot;p0-r0-f0&quot; aria-describedby=&quot;p0-r0-d4&quot;&gt;
+                &lt;fieldset class=&quot;fieldset field-group&quot; id=&quot;p0-r0-f0&quot; aria-describedby=&quot;p0-r0-d4&quot;&gt;
                     &lt;legend class=&quot;response-fieldset-legend field-group-hd&quot; id=&quot;p0-r0-f0-legend&quot;&gt;The following languages are in the Indo-European family:&lt;/legend&gt;
                     &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
                         &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p0-r0-f0-q0&quot;&gt;
@@ -167,11 +168,11 @@ title: Checkboxes
 
     &lt;div class=&quot;problem-actions form-actions&quot;&gt;
         &lt;input type=&quot;hidden&quot; name=&quot;problem_id&quot; value=&quot;Checkboxes&quot;&gt;
-        &lt;button class=&quot;btn-default btn-base&quot; data-checking=&quot;Checking...&quot; data-value=&quot;Check&quot;&gt;
+        &lt;button class=&quot;btn-brand&quot; data-checking=&quot;Checking...&quot; data-value=&quot;Check&quot;&gt;
             &lt;span class=&quot;check-label&quot;&gt;Check&lt;/span&gt;
             &lt;span class=&quot;sr&quot;&gt; your answer&lt;/span&gt;
         &lt;/button&gt;
-        &lt;button class=&quot;btn-default btn-base show&quot;&gt;
+        &lt;button class=&quot;btn-neutral show&quot;&gt;
             &lt;span class=&quot;sr&quot;&gt;Toggle answer visibility&lt;/span&gt;
             &lt;span class=&quot;show-label&quot;&gt;Show Answer&lt;/span&gt;
         &lt;/button&gt;
@@ -184,57 +185,97 @@ title: Checkboxes
 
 <pre class="code">
 &lt;problem&gt;
-    &lt;legend&gt;Question text&lt;/legend&gt;
-    &lt;choiceresponse&gt;
-        &lt;checkboxgroup label=&quot;label text&quot;&gt;
-            &lt;choice correct=&quot;false&quot;&gt;
-                Answer option A (incorrect)
-                &lt;choicehint selected=&quot;true&quot;&gt;
-                    Feedback for when learner selects this answer.
-                &lt;/choicehint&gt;
-                &lt;choicehint selected=&quot;false&quot;&gt;
-                    Feedback for when learner does not select this answer.
-                &lt;/choicehint&gt;
-            &lt;/choice&gt;
-            &lt;choice correct=&quot;true&quot;&gt;
-                Answer option B (correct)
-                &lt;choicehint selected=&quot;true&quot;&gt;
-                    Feedback for when learner selects this answer.
-                &lt;/choicehint&gt;
-                &lt;choicehint selected=&quot;false&quot;&gt;
-                    Feedback for when learner does not select this answer.
-                &lt;/choicehint&gt;
-            &lt;/choice&gt;
-            &lt;choice correct=&quot;false&quot;&gt;
-                Answer option C (correct)
-                &lt;choicehint selected=&quot;true&quot;&gt;
-                    Feedback for when learner selects this answer.
-                &lt;/choicehint&gt;
-                &lt;choicehint selected=&quot;false&quot;&gt;
-                    Feedback for when learner does not select this answer.
-                &lt;/choicehint&gt;
-            &lt;/choice&gt;
-            &lt;compoundhint value=&quot;A B&quot;&gt;
-                Feedback when answers A and B are selected.
-            &lt;/compoundhint&gt;
-            &lt;compoundhint value=&quot;A C&quot;&gt;
-                Feedback when answers A and C are selected.
-            &lt;/compoundhint&gt;
-        &lt;/checkboxgroup&gt;
-    &lt;/choiceresponse&gt;
+    &lt;description&gt;
+        Helper or expanatory/introduction text to the problem. Anything here would be applicable to any response included in this question.
+    &lt;/description&gt;
+    &lt;question&gt;
+        &lt;description&gt;
+            Checkbox problems allow learners to select multiple options. Learners can see all the options along with the problem text.
+        &lt;/description&gt;
+        &lt;description&gt;
+            When you add the component, be sure to select Settings to specify a Display Name and other values that apply.
+        &lt;/description&gt;
+        &lt;description&gt;
+            You can use the following example problem as a model.
+        &lt;/description&gt;
+        &lt;form&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;The following languages are in the Indo-European family:&lt;/legend&gt;
+                &lt;choiceresponse&gt;
+                    &lt;checkboxgroup label=&quot;The following languages are in the Indo-European family:&quot;&gt;
+                        &lt;choice correct=&quot;false&quot;&gt;
+                            Urdu
+                            &lt;choicehint selected=&quot;true&quot;&gt;
+                                Feedback for when learner selects this answer.
+                            &lt;/choicehint&gt;
+                            &lt;choicehint selected=&quot;false&quot;&gt;
+                                Feedback for when learner does not select this answer.
+                            &lt;/choicehint&gt;
+                        &lt;/choice&gt;
+                        &lt;choice correct=&quot;true&quot;&gt;
+                            Finnish
+                            &lt;choicehint selected=&quot;true&quot;&gt;
+                                Feedback for when learner selects this answer.
+                            &lt;/choicehint&gt;
+                            &lt;choicehint selected=&quot;false&quot;&gt;
+                                Feedback for when learner does not select this answer.
+                            &lt;/choicehint&gt;
+                        &lt;/choice&gt;
+                        &lt;choice correct=&quot;false&quot;&gt;
+                            Marathi
+                            &lt;choicehint selected=&quot;true&quot;&gt;
+                                Feedback for when learner selects this answer.
+                            &lt;/choicehint&gt;
+                            &lt;choicehint selected=&quot;false&quot;&gt;
+                                Feedback for when learner does not select this answer.
+                            &lt;/choicehint&gt;
+                        &lt;/choice&gt;
+                        &lt;choice correct=&quot;false&quot;&gt;
+                            French
+                            &lt;choicehint selected=&quot;true&quot;&gt;
+                                Feedback for when learner selects this answer.
+                            &lt;/choicehint&gt;
+                            &lt;choicehint selected=&quot;false&quot;&gt;
+                                Feedback for when learner does not select this answer.
+                            &lt;/choicehint&gt;
+                        &lt;/choice&gt;
+                        &lt;choice correct=&quot;false&quot;&gt;
+                            Hungarian
+                            &lt;choicehint selected=&quot;true&quot;&gt;
+                                Feedback for when learner selects this answer.
+                            &lt;/choicehint&gt;
+                            &lt;choicehint selected=&quot;false&quot;&gt;
+                                Feedback for when learner does not select this answer.
+                            &lt;/choicehint&gt;
+                        &lt;/choice&gt;
+                        &lt;compoundhint value=&quot;A B&quot;&gt;
+                            Feedback when answers A and B are selected.
+                        &lt;/compoundhint&gt;
+                        &lt;compoundhint value=&quot;A C&quot;&gt;
+                            Feedback when answers A and C are selected.
+                        &lt;/compoundhint&gt;
+                    &lt;/checkboxgroup&gt;
+                &lt;/choiceresponse&gt;
+            &lt;/fieldset&gt;
+        &lt;/form&gt;
 
-    &lt;demandhint&gt;
-        &lt;hint&gt;Hint 1&lt;/hint&gt;
-        &lt;hint&gt;Hint 2&lt;/hint&gt;
-        &lt;hint&gt;Hint 3&lt;/hint&gt;
-    &lt;/demandhint&gt;
+        &lt;demandhint&gt;
+            &lt;hint&gt;Hint 1&lt;/hint&gt;
+            &lt;hint&gt;Hint 2&lt;/hint&gt;
+            &lt;hint&gt;Hint 3&lt;/hint&gt;
+        &lt;/demandhint&gt;
 
-    &lt;solution&gt;
-        &lt;div class=&quot;detailed-solution&quot;&gt;
-            &lt;p&gt;Solution or Explanation Heading&lt;/p&gt;
-            &lt;p&gt;Solution or explanation text&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/solution&gt;
+        &lt;status&gt;
+            This response is unanswered.
+        &lt;/status&gt;
+
+        &lt;solution&gt;
+            &lt;div&gt;
+                &lt;h4&gt;Explanation&lt;/p&gt;
+                &lt;p&gt;Solution or explanation text&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/solution&gt;
+    &lt;/question&gt;
 &lt;/problem&gt;
 </pre>
             </div>
@@ -243,9 +284,8 @@ title: Checkboxes
 
                 <p class="copy">Files for this problem type can be found in the following locations:</p>
                 <ul class="list-bulleted">
-                    <li class="item"><code>capa/inputtypes/checkbox</code></li>
-                    <li class="item"><code></code></li>
-                    <li class="item"><code></code></li>
+                    <li class="item"><code>common/lib/capa/inputtypes.py</code></li>
+                    <li class="item"><code>common/lib/capa/templates/choicegroup.html</code></li>
                 </ul>
             </div>
             <div class="panel" id="docs" tabindex="-1">

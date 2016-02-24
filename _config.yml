@@ -3,6 +3,3 @@ exclude:            [
                         "css",
                         "_scss"
                     ]
-keep_files:         [
-                        "_site/edx-capa.css"
-                    ]
