@@ -1,0 +1,357 @@
+---
+title: MultipleChoice
+subtitle: Multiple
+tags: type, multiple
+---
+{% include head.html %}
+{% include header.html %}
+
+    <div id="main" role="main">
+        <h2 class="hd hd-2 emphasized">Checkboxes</h2>
+        <div class="tabs">
+            <button class="toggle is-active" data-panel="output" aria-pressed="true">Preview</button>
+            <button class="toggle" data-panel="markup" aria-pressed="false">Markup</button>
+            <button class="toggle" data-panel="olx" aria-pressed="false">OLX</button>
+            <button class="toggle" data-panel="files" aria-pressed="false">Files</button>
+            <button class="toggle" data-panel="docs" aria-pressed="false">Documentation</button>
+        </div>
+        <section class="tab-panels">
+            <div class="panel is-active" id="output" tabindex="-1">
+                <h3 class="hd hd-3">Preview</h3>
+
+                <div class="code">
+                    <div class="problem" id="p0">
+                        <h1 class="problem-title hd hd-1" id="p0-heading"><span class="sr">Problem 1</span><span class="problem-title-visible"></span></h1>
+                        <p class="problem-description copy" id="p0-d0">Helper or expanatory/introduction text to the problem. Anything here would be applicable to any response included in this question.</p>
+                        <div class="problem-feedback" tabindex="-1" id="p0-feedback"></div>
+
+                        <section class="wrapper-problem-response" id="p0-r0" tabindex="-1" aria-labelledby="p0-heading p0-r0-heading">
+                            <p class="problem-response-title hd hd-2 sr" id="p0-r0-heading">Question 1</p>
+                            <div class="problem-response">
+                                <p class="response-description copy" id="p0-r0-d0">Checkbox problems allow learners to select multiple options. Learners can see all the options along with the problem text.</p>
+                                <p class="response-description copy" id="p0-r0-d1">When you add the component, be sure to select <strong>Settings</strong> to specify a <strong>Display Name</strong> and other values that apply.</p>
+                                <p class="response-description copy" id="p0-r0-d2">You can use the following example problem as a model.</p>
+                                <form class="form" id="p0-r0-form">
+                                    <fieldset class="fieldset field-group" id="p0-r0-f0" aria-describedby="p0-r0-d4">
+                                        <legend class="response-fieldset-legend field-group-hd" id="p0-r0-f0-legend">The following languages are in the Indo-European family:</legend>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p0-r0-f0-q0">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p0-r0-f0-q0[]" id="p0-r0-f0-q0-field" value="">
+                                                <span class="field-input-label" id="p0-r0-f0-q0-label">Urdu</span>
+                                            </label>
+                                        </div>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p0-r0-f0-q1">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p0-r0-f0-q1[]" id="p0-r0-f0-q1-field" value="">
+                                                <span class="field-input-label" id="p0-r0-f0-q1-label">Finnish</span>
+                                            </label>
+                                        </div>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p0-r0-f0-q2">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p0-r0-f0-q2[]" id="p0-r0-f0-q2-field" value="">
+                                                <span class="field-input-label" id="p0-r0-f0-q2-label">Marathi</span>
+                                            </label>
+                                        </div>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p0-r0-f0-q3">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p0-r0-f0-q3[]" id="p0-r0-f0-q3-field" value="">
+                                                <span class="field-input-label" id="p0-r0-f0-q3-label">French</span>
+                                            </label>
+                                        </div>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p0-r0-f0-q4">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p0-r0-f0-q4[]" id="p0-r0-f0-q4-field" value="">
+                                                <span class="field-input-label" id="p0-r0-f0-q4-label">Hungarian</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                               <p class="response-description copy" id="p0-r0-d4">Make sure you select all of the correct options—there may be more than one!</p>
+                            </div>
+                            <div class="response-answer" id="p0-r0-answer" aria-live="polite"></div>
+                            <div class="response-status" id="p0-r0-status">
+                                <div class="message-status message">
+                                    <h4 class="status-title hd hd-4 sr">Response status</h4>
+                                    <span class="status unanswered" data-tooltip="This is unanswered."></span>
+                                    <span class="sr">This response is unanswered</span>
+                                </div>
+                            </div>
+                            <div class="response-solution" id="p0-r0-solution" tabindex="-1">
+                                <div class="message-success message">
+                                    <h4 class="solution-title hd hd-4">Explanation</h4>
+                                    <p class="solution-description copy">Urdu, Marathi, and French are all Indo-European languages, while Finnish and Hungarian are in the Uralic family.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="problem-actions form-actions">
+                            <input type="hidden" name="problem_id" value="Checkboxes">
+                            <button class="btn-brand" data-checking="Checking..." data-value="Check">
+                                <span class="check-label">Check</span>
+                                <span class="sr"> your answer</span>
+                            </button>
+                            <button class="btn-neutral show">
+                                <span class="sr">Toggle answer visibility</span>
+                                <span class="show-label">Show Answer</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="problem" id="p1">
+                        <h1 class="problem-title hd hd-1" id="p1-heading"><span class="sr">Problem 2</span><span class="problem-title-visible"></span></h1>
+                        <p class="problem-description copy" id="p1-d0">Helper or expanatory/introduction text to the problem. Anything here would be applicable to any response included in this question.</p>
+                        <div class="problem-feedback" tabindex="-1" id="p1-feedback"></div>
+
+                        <section class="wrapper-problem-response" id="p1-r0" tabindex="-1" aria-labelledby="p1-heading p1-r0-heading">
+                            <p class="problem-response-title hd hd-2 sr" id="p1-r0-heading">Question 1</p>
+                            <div class="problem-response">
+                                <p class="response-description copy" id="p1-r0-d0">Checkbox problems allow learners to select multiple options. Learners can see all the options along with the problem text.</p>
+                                <p class="response-description copy" id="p1-r0-d1">When you add the component, be sure to select <strong>Settings</strong> to specify a <strong>Display Name</strong> and other values that apply.</p>
+                                <p class="response-description copy" id="p1-r0-d2">You can use the following example problem as a model.</p>
+                                <form class="form" id="p1-r0-form">
+                                    <fieldset class="fieldset field-group" id="p1-r0-f0" aria-describedby="p1-r0-d4">
+                                        <legend class="response-fieldset-legend field-group-hd" id="p1-r0-f0-legend">The following languages are in the Indo-European family:</legend>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p1-r0-f0-q0">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p1-r0-f0-q0[]" id="p1-r0-f0-q0-field" value="">
+                                                <span class="field-input-label" id="p1-r0-f0-q0-label">Urdu</span>
+                                            </label>
+                                        </div>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p1-r0-f0-q1">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p1-r0-f0-q1[]" id="p1-r0-f0-q1-field" value="">
+                                                <span class="field-input-label" id="p1-r0-f0-q1-label">Finnish</span>
+                                            </label>
+                                        </div>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p1-r0-f0-q2">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p1-r0-f0-q2[]" id="p1-r0-f0-q2-field" value="">
+                                                <span class="field-input-label" id="p1-r0-f0-q2-label">Marathi</span>
+                                            </label>
+                                        </div>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p1-r0-f0-q3">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p1-r0-f0-q3[]" id="p1-r0-f0-q3-field" value="">
+                                                <span class="field-input-label" id="p1-r0-f0-q3-label">French</span>
+                                            </label>
+                                        </div>
+                                        <div class="field" aria-live="polite" aria-atomic="true">
+                                            <label class="response-label field-label label-inline" id="p1-r0-f0-q4">
+                                                <input class="field-input input-checkbox" type="checkbox" name="p1-r0-f0-q4[]" id="p1-r0-f0-q4-field" value="">
+                                                <span class="field-input-label" id="p1-r0-f0-q4-label">Hungarian</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                               <p class="response-description copy" id="p1-r0-d4">Make sure you select all of the correct options—there may be more than one!</p>
+                            </div>
+                            <div class="response-answer" id="p1-r0-answer" aria-live="polite"></div>
+                            <div class="response-status" id="p1-r0-status">
+                                <div class="message-status message">
+                                    <h4 class="status-title hd hd-4 sr">Response status</h4>
+                                    <span class="status unanswered" data-tooltip="This is unanswered."></span>
+                                    <span class="sr">This response is unanswered</span>
+                                </div>
+                            </div>
+                            <div class="response-solution" id="p1-r0-solution" tabindex="-1">
+                                <div class="message-success message">
+                                    <h4 class="solution-title hd hd-4">Explanation</h4>
+                                    <p class="solution-description copy">Urdu, Marathi, and French are all Indo-European languages, while Finnish and Hungarian are in the Uralic family.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="problem-actions form-actions">
+                            <input type="hidden" name="problem_id" value="Checkboxes">
+                            <button class="btn-brand" data-checking="Checking..." data-value="Check">
+                                <span class="check-label">Check</span>
+                                <span class="sr"> your answer</span>
+                            </button>
+                            <button class="btn-neutral show">
+                                <span class="sr">Toggle answer visibility</span>
+                                <span class="show-label">Show Answer</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" id="markup" tabindex="-1">
+                <h3 class="hd hd-3">Markup</h3>
+
+<pre class="code">
+&lt;div class=&quot;problem&quot; id=&quot;p0&quot;&gt;
+    &lt;h1 class=&quot;problem-title hd hd-1&quot; id=&quot;p0-heading&quot; aria-describedby=&quot;p0-d0&quot;&gt;&lt;span class=&quot;sr&quot;&gt;Problem 1&lt;/span&gt;&lt;span class=&quot;problem-title-visible&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;p class=&quot;problem-description copy&quot; id=&quot;p0-d0&quot;&gt;Helper or expanatory/introduction text to the problem. Anything here would be applicable to any response included in this question.&lt;/p&gt;
+    &lt;div class=&quot;problem-feedback&quot; tabindex=&quot;-1&quot; id=&quot;p0-feedback&quot;&gt;&lt;/div&gt;
+
+    &lt;section class=&quot;wrapper-problem-response&quot; id=&quot;p0-r0&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;p0-heading p0-r0-heading&quot;&gt;
+        &lt;p class=&quot;problem-response-title hd hd-2 sr&quot; id=&quot;p0-r0-heading&quot;&gt;Question 1&lt;/p&gt;
+        &lt;div class=&quot;problem-response&quot;&gt;
+            &lt;p class=&quot;response-description copy&quot; id=&quot;p0-r0-d0&quot;&gt;Checkbox problems allow learners to select multiple options. Learners can see all the options along with the problem text.&lt;/p&gt;
+            &lt;p class=&quot;response-description copy&quot; id=&quot;p0-r0-d1&quot;&gt;When you add the component, be sure to select &lt;strong&gt;Settings&lt;/strong&gt; to specify a &lt;strong&gt;Display Name&lt;/strong&gt; and other values that apply.&lt;/p&gt;
+            &lt;p class=&quot;response-description copy&quot; id=&quot;p0-r0-d2&quot;&gt;You can use the following example problem as a model.&lt;/p&gt;
+            &lt;form class=&quot;form&quot; id=&quot;p0-r0-form&quot;&gt;
+                &lt;fieldset class=&quot;fieldset field-group&quot; id=&quot;p0-r0-f0&quot; aria-describedby=&quot;p0-r0-d4&quot;&gt;
+                    &lt;legend class=&quot;response-fieldset-legend field-group-hd&quot; id=&quot;p0-r0-f0-legend&quot;&gt;The following languages are in the Indo-European family:&lt;/legend&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p0-r0-f0-q0&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p0-r0-f0-q0[]&quot; id=&quot;p0-r0-f0-q0-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p0-r0-f0-q0-label&quot;&gt;Urdu&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p0-r0-f0-q1&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p0-r0-f0-q1[]&quot; id=&quot;p0-r0-f0-q1-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p0-r0-f0-q1-label&quot;&gt;Finnish&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p0-r0-f0-q2&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p0-r0-f0-q2[]&quot; id=&quot;p0-r0-f0-q2-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p0-r0-f0-q2-label&quot;&gt;Marathi&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p0-r0-f0-q3&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p0-r0-f0-q3[]&quot; id=&quot;p0-r0-f0-q3-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p0-r0-f0-q3-label&quot;&gt;French&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p0-r0-f0-q4&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p0-r0-f0-q4[]&quot; id=&quot;p0-r0-f0-q4-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p0-r0-f0-q4-label&quot;&gt;Hungarian&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/fieldset&gt;
+            &lt;/form&gt;
+           &lt;p class=&quot;response-description copy&quot; id=&quot;p0-r0-d4&quot;&gt;Make sure you select all of the correct options—there may be more than one!&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;response-answer&quot; id=&quot;p0-r0-answer&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;response-status&quot; id=&quot;p0-r0-status&quot;&gt;
+            &lt;div class=&quot;message-status message&quot;&gt;
+                &lt;h4 class=&quot;status-title hd hd-4 sr&quot;&gt;Response status&lt;/h4&gt;
+                &lt;span class=&quot;status unanswered&quot; data-tooltip=&quot;This is unanswered.&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;sr&quot;&gt;This response is unanswered&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;response-solution&quot; id=&quot;p0-r0-solution&quot; tabindex=&quot;-1&quot;&gt;
+            &lt;div class=&quot;message-success message&quot;&gt;
+                &lt;h4 class=&quot;solution-title hd hd-4&quot;&gt;Explanation&lt;/h4&gt;
+                &lt;p class=&quot;solution-description copy&quot;&gt;Urdu, Marathi, and French are all Indo-European languages, while Finnish and Hungarian are in the Uralic family.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;div class=&quot;problem-actions form-actions&quot;&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;problem_id&quot; value=&quot;Checkboxes&quot;&gt;
+        &lt;button class=&quot;btn-brand&quot; data-checking=&quot;Checking...&quot; data-value=&quot;Check&quot;&gt;
+            &lt;span class=&quot;check-label&quot;&gt;Check&lt;/span&gt;
+            &lt;span class=&quot;sr&quot;&gt; your answer&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;btn-neutral show&quot;&gt;
+            &lt;span class=&quot;sr&quot;&gt;Toggle answer visibility&lt;/span&gt;
+            &lt;span class=&quot;show-label&quot;&gt;Show Answer&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;problem&quot; id=&quot;p1&quot;&gt;
+    &lt;h1 class=&quot;problem-title hd hd-1&quot; id=&quot;p1-heading&quot; aria-describedby=&quot;p1-d0&quot;&gt;&lt;span class=&quot;sr&quot;&gt;Problem 2&lt;/span&gt;&lt;span class=&quot;problem-title-visible&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;p class=&quot;problem-description copy&quot; id=&quot;p1-d0&quot;&gt;Helper or expanatory/introduction text to the problem. Anything here would be applicable to any response included in this question.&lt;/p&gt;
+    &lt;div class=&quot;problem-feedback&quot; tabindex=&quot;-1&quot; id=&quot;p1-feedback&quot;&gt;&lt;/div&gt;
+
+    &lt;section class=&quot;wrapper-problem-response&quot; id=&quot;p1-r0&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;p1-heading p1-r0-heading&quot;&gt;
+        &lt;p class=&quot;problem-response-title hd hd-2 sr&quot; id=&quot;p1-r0-heading&quot;&gt;Question 1&lt;/p&gt;
+        &lt;div class=&quot;problem-response&quot;&gt;
+            &lt;p class=&quot;response-description copy&quot; id=&quot;p1-r0-d0&quot;&gt;Checkbox problems allow learners to select multiple options. Learners can see all the options along with the problem text.&lt;/p&gt;
+            &lt;p class=&quot;response-description copy&quot; id=&quot;p1-r0-d1&quot;&gt;When you add the component, be sure to select &lt;strong&gt;Settings&lt;/strong&gt; to specify a &lt;strong&gt;Display Name&lt;/strong&gt; and other values that apply.&lt;/p&gt;
+            &lt;p class=&quot;response-description copy&quot; id=&quot;p1-r0-d2&quot;&gt;You can use the following example problem as a model.&lt;/p&gt;
+            &lt;form class=&quot;form&quot; id=&quot;p1-r0-form&quot;&gt;
+                &lt;fieldset class=&quot;fieldset field-group&quot; id=&quot;p1-r0-f0&quot; aria-describedby=&quot;p1-r0-d4&quot;&gt;
+                    &lt;legend class=&quot;response-fieldset-legend field-group-hd&quot; id=&quot;p1-r0-f0-legend&quot;&gt;The following languages are in the Indo-European family:&lt;/legend&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p1-r0-f0-q0&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p1-r0-f0-q0[]&quot; id=&quot;p1-r0-f0-q0-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p1-r0-f0-q0-label&quot;&gt;Urdu&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p1-r0-f0-q1&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p1-r0-f0-q1[]&quot; id=&quot;p1-r0-f0-q1-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p1-r0-f0-q1-label&quot;&gt;Finnish&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p1-r0-f0-q2&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p1-r0-f0-q2[]&quot; id=&quot;p1-r0-f0-q2-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p1-r0-f0-q2-label&quot;&gt;Marathi&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p1-r0-f0-q3&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p1-r0-f0-q3[]&quot; id=&quot;p1-r0-f0-q3-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p1-r0-f0-q3-label&quot;&gt;French&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;field&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot;&gt;
+                        &lt;label class=&quot;response-label field-label label-inline&quot; id=&quot;p1-r0-f0-q4&quot;&gt;
+                            &lt;input class=&quot;field-input input-checkbox&quot; type=&quot;checkbox&quot; name=&quot;p1-r0-f0-q4[]&quot; id=&quot;p1-r0-f0-q4-field&quot; value=&quot;&quot;&gt;
+                            &lt;span class=&quot;field-input-label&quot; id=&quot;p1-r0-f0-q4-label&quot;&gt;Hungarian&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/fieldset&gt;
+            &lt;/form&gt;
+           &lt;p class=&quot;response-description copy&quot; id=&quot;p1-r0-d4&quot;&gt;Make sure you select all of the correct options—there may be more than one!&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;response-answer&quot; id=&quot;p1-r0-answer&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;response-status&quot; id=&quot;p1-r0-status&quot;&gt;
+            &lt;div class=&quot;message-status message&quot;&gt;
+                &lt;h4 class=&quot;status-title hd hd-4 sr&quot;&gt;Response status&lt;/h4&gt;
+                &lt;span class=&quot;status unanswered&quot; data-tooltip=&quot;This is unanswered.&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;sr&quot;&gt;This response is unanswered&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;response-solution&quot; id=&quot;p1-r0-solution&quot; tabindex=&quot;-1&quot;&gt;
+            &lt;div class=&quot;message-success message&quot;&gt;
+                &lt;h4 class=&quot;solution-title hd hd-4&quot;&gt;Explanation&lt;/h4&gt;
+                &lt;p class=&quot;solution-description copy&quot;&gt;Urdu, Marathi, and French are all Indo-European languages, while Finnish and Hungarian are in the Uralic family.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;div class=&quot;problem-actions form-actions&quot;&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;problem_id&quot; value=&quot;Checkboxes&quot;&gt;
+        &lt;button class=&quot;btn-brand&quot; data-checking=&quot;Checking...&quot; data-value=&quot;Check&quot;&gt;
+            &lt;span class=&quot;check-label&quot;&gt;Check&lt;/span&gt;
+            &lt;span class=&quot;sr&quot;&gt; your answer&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;btn-neutral show&quot;&gt;
+            &lt;span class=&quot;sr&quot;&gt;Toggle answer visibility&lt;/span&gt;
+            &lt;span class=&quot;show-label&quot;&gt;Show Answer&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            </div>
+            <div class="panel" id="olx" tabindex="-1">
+                <h3 class="hd hd-3">OLX</h3>
+
+<pre class="code">
+{% include_relative olx.html %}
+</pre>
+            </div>
+            <div class="panel" id="files" tabindex="-1">
+                <h3 class="hd hd-3">Files</h3>
+
+                <p class="copy">Files for this problem type can be found in the following locations:</p>
+                {% include_relative files.html %}
+            </div>
+            <div class="panel" id="docs" tabindex="-1">
+                <h3 class="hd hd-3">Documentation</h3>
+
+                <p class="copy">{% include_relative docs.html %}</p>
+            </div>
+        </section>
+    </div>
+
+{% include footer.html %}
+{% include foot.html %}
