@@ -3,3 +3,4 @@ exclude:            [
                         "css",
                         "_scss"
                     ]
+highlighter:        pygments
